@@ -28,7 +28,5 @@ jobs:
             luisluis12/calculadora:latest
           
       - uses: actions/checkout@v2
-      - name: Install Modules
-        run: npm
       - name: Run tests
         run: npm test
