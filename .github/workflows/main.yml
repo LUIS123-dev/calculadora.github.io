@@ -27,9 +27,9 @@ jobs:
             luisluis12/calculadora:v1
             luisluis12/calculadora:latest
           
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Install Modules
         run: npm
-      - name: Run Jest
+      - name: Run tests
         run: npm test
         uses: stefanoeb/jest-action@1.0.3
