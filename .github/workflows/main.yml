@@ -24,6 +24,6 @@ jobs:
           context: .
           push: true
           tags: | 
-            luisfernandosantos/calculadora:v1
-            luisfernandosantos/calculadora:latest
+            luisluis12/calculadora:v1
+            luisluis12/calculadora:latest
           
