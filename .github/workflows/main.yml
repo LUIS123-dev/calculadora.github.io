@@ -27,3 +27,8 @@ jobs:
             luisluis12/calculadora:v1
             luisluis12/calculadora:latest
           
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn
+      - name: Run tests
+        run: yarn test
