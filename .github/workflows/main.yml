@@ -23,10 +23,15 @@ jobs:
         with:
           context: .
           push: true
-          tags: | 
+          tags: |
             luisluis12/calculadora:v1
             luisluis12/calculadora:latest
           
       - uses: actions/checkout@v1
-      - name: Run test
-        uses: stefanoeb/jest-action@1.0.3
+      - name: Test using Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16'
+      
+      - run: npm install
+      - run: npm test
