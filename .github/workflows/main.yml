@@ -32,7 +32,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '16'
-      
       - run: npm install
       - run: chmod +rwx ./node_modules/.bin/jest
       - run: npm test
