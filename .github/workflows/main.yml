@@ -27,6 +27,6 @@ jobs:
             luisluis12/calculadora:v1
             luisluis12/calculadora:latest
           
-      - uses: actions/checkout@v2
-      - name: Run tests
-        run: npm test
+      - uses: actions/checkout@v1
+      - name: Run test
+        uses: stefanoeb/jest-action@1.0.3
