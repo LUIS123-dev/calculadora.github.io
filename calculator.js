@@ -1,40 +1,52 @@
-const add = function(a, b) {
-    return a + b
-  };
+const add = function (a, b) {
+  return a + b
+};
 
-  const subtract = function(a, b) {
-    return a - b
-  };
+const subtract = function (a, b) {
+  return a - b
+};
 
-  const sum = function(array){
-    return  array.reduce ((prevVal, elemento) => prevVal + elemento, 0);
-   };
+const sum = function (array) {
+  return array.reduce((prevVal, elemento) => prevVal + elemento, 0);
+};
 
-  const multiply = function(array) {
-    return array.length
+const multiply = function (array) {
+  return array.length
     ? array.reduce((accumulator, nextItem) => accumulator * nextItem)
     : 0;
+}
+
+const power = function (a, b) {
+  return Math.pow(a, b)
+};
+
+const factorial = function (n) {
+  if (n === 0) return 1;
+  let product = 1;
+  for (let i = n; i > 0; i--) {
+    product *= i;
+  }
+  return product;
+};
+
+const addDigit = function (a) {
+
+  if (a !== "." && isNaN(a)) {
+    currentOperation = '';
+  } else {
+    currentOperation = a;
   }
 
-  const power = function(a, b) {
-  return Math.pow(a, b)
-  };
+  return currentOperation;
+}
 
-  const factorial = function(n) {
-    if (n === 0) return 1;
-    let product = 1;
-    for (let i = n; i > 0; i--) {
-      product *= i;
-    }
-    return product;
-  };
-
-  // Do not edit below this line
-  module.exports = {
-    add,
-    subtract,
-    sum,
-    multiply,
-    power,
-    factorial
-  };
+// Do not edit below this line
+module.exports = {
+  add,
+  subtract,
+  sum,
+  multiply,
+  power,
+  factorial,
+  addDigit
+};
