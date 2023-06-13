@@ -1,4 +1,4 @@
-# calculadora.github.io
+# calculadora.github.io   - TRABALHO 6° ADS
 
 - LUIS FERNANDO SANTOS BEZERRA
 - ANDRE PEDRO GOMES 
